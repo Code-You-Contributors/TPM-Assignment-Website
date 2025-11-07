@@ -1,8 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HandbookView from '@/views/HandbookView.vue'
+import StartersView from '@/views/StartersView.vue'
 import AssignmentView from '@/views/AssignmentView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
 
 const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HandbookView
+  },
+
+  {
+    path: '/starters',
+    name: 'starters',
+    component: StartersView
+  },
+
   {
     path: '/assignments',
     name: 'assignments',
