@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  /* Primary Colors */
+  --black-cherry: #881f48;
+  --black-berry: #022f47;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Background Clours (BG) */
+  --bg-1: #31465a;
+  --bg-2: #586275;
+  --bg-3: #828796;
+  --bg-4: #b2b5be;
+  --bg-5: #f3f3f4;
+
+  /* Bright Colors (B) */
+  --b-purple: #44174c;
+  --b-blue: #106396;
+  --b-torquise: #26a4b4;
+  --b-green: #25b67b;
+  --b-yellow: #ecb41f;
+  --b-orange: #e06b26;
+  --b-magenta: #e4185b;
+  --b-violet: #9f2064;
+
+  /* Dark Colors (D) */
+  --d-purple: #301339;
+  --d-blue: #11476c;
+  --d-torquise: #1c6c79;
+  --d-green: #0f7657;
+  --d-yellow: #866c2c;
+  --d-orange: #874728;
+  --d-magenta: #881f48;
+  --d-violet: #651d4e;
+
+  /* Fonts */
+  --font-body: "Roboto", sans-serif;
+  --font-alt-headline: "Share Tech Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -7,7 +7,15 @@
     <router-link to="/assignments">Assignments</router-link> |
     <router-link to="/working-with-us">Working With Us</router-link>
   </nav>
-  <router-view />
+    <router-view />
 </template>
 
-<style scoped></style>
+<style scoped>
+  nav a {
+    color: var(--black-cherry);
+    font-family: var(--font-alt-headline);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+</style>
