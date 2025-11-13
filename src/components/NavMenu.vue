@@ -2,7 +2,7 @@
   <aside :class="isOpen ? 'active' : ''">
     <nav>
       <router-link to="/" v-on:click="closeMenu">Home</router-link>
-      <router-link to="/starters" v-on:click="closeMenu">Starters</router-link>
+      <router-link to="/initial-projects" v-on:click="closeMenu">Initial Projects</router-link>
       <router-link to="/assignments" v-on:click="closeMenu">Assignments</router-link>
       <router-link to="/working-with-us" v-on:click="closeMenu">Working With Us</router-link>
     </nav>

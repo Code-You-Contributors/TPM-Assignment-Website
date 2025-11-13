@@ -1,5 +1,5 @@
 <template>
-  <div class="starters">
+  <div class="initial-projects">
     <h1>Initial Project Assignment</h1>
     <iframe
       src="https://docs.google.com/document/d/1FZzouPN-F6zeP7oqAreAN-cX_XhfbsKfNdi3ZkiR0-Q/preview"
@@ -9,16 +9,16 @@
 
 <script>
 export default {
-  name: 'Starters',
+  name: 'InitialProjects',
 };
 </script>
 
 <style>
-.starters {
+.initial-projects {
   height: 100vh;
 }
 
-.starters iframe {
+.initial-projects iframe {
   width: 100%;
   height: 100%;
   border: none;

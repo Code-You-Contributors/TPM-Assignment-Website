@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HandbookView from '@/views/HandbookView.vue'
-import StartersView from '@/views/StartersView.vue'
+import InitialProjectsView from '@/views/InitialProjectsView.vue'
 import AssignmentView from '@/views/AssignmentView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
 
@@ -12,9 +12,9 @@ const routes = [
   },
 
   {
-    path: '/starters',
-    name: 'starters',
-    component: StartersView
+    path: '/initial-projects',
+    name: 'initial-projects',
+    component: InitialProjectsView
   },
 
   {
