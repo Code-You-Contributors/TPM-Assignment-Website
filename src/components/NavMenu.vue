@@ -3,10 +3,10 @@
     <img src="@/assets/imgs/cy-logo-dstacked-color.png" alt="Code:You logo" class="logo-stacked" id="logo-stacked">
     <img src="@/assets/imgs/cy-logo-horz-color.png" alt="Code:You logo" class="logo-horizontal" id="logo-horizontal">
     <nav>
-      <router-link to="/" v-on:click="closeMenu">Home</router-link>
-      <router-link to="/initial-projects" v-on:click="closeMenu">Initial Projects</router-link>
-      <router-link to="/assignments" v-on:click="closeMenu">Assignments</router-link>
-      <router-link to="/working-with-us" v-on:click="closeMenu">Working With Us</router-link>
+      <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-house"></i>Home</router-link>
+      <router-link to="/initial-projects" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Initial Projects</router-link>
+      <router-link to="/assignments" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Assignments</router-link>
+      <router-link to="/working-with-us" v-on:click="closeMenu"><i class="fa-solid fa-people-group"></i>Working With Us</router-link>
     </nav>
   </aside>
   <div class="content">
@@ -47,12 +47,13 @@ aside {
   color: var(--black-cherry);
   font-family: var(--font-alt-headline);
   padding: 40px 20px;
-  width: 200px;
+  width: 250px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  height: 100vh;
 }
 
 aside a {
@@ -115,9 +116,22 @@ aside a {
     margin-bottom: 0;
     font-size: 1.25rem;
   }
+
+  aside nav a i {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .logo-horizontal {
+    display: none;
+  }
+
+  .logo-stacked {
+    display: block;
+    max-width: 20%;
+  }
+
   aside {
     width: 100vw;
     flex-direction: column;
