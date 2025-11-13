@@ -1,5 +1,7 @@
 <template>
   <aside :class="isOpen ? 'active' : ''">
+    <img src="@/assets/imgs/cy-logo-dstacked-color.png" alt="Code:You logo" class="logo-stacked" id="logo-stacked">
+    <img src="@/assets/imgs/cy-logo-horz-color.png" alt="Code:You logo" class="logo-horizontal" id="logo-horizontal">
     <nav>
       <router-link to="/" v-on:click="closeMenu">Home</router-link>
       <router-link to="/initial-projects" v-on:click="closeMenu">Initial Projects</router-link>
@@ -29,6 +31,17 @@ function closeMenu() {
 </script>
 
 <style scoped>
+.logo-horizontal {
+  display: none;
+}
+
+.logo-stacked {
+  width: 70%;
+  height: auto;
+  margin-bottom: 80px;
+  align-self: center;
+}
+
 aside {
   background-color: var(--bg-5);
   color: var(--black-cherry);
@@ -73,6 +86,17 @@ aside a {
 }
 
 @media (max-width: 960px) {
+  .logo-stacked {
+    display: none;
+  }
+
+  .logo-horizontal {
+    display: block;
+    flex: 1;
+    max-width: 100%;
+    max-height: 40px;
+  }
+
   aside {
     height: 50px;
     width: 100vw;
