@@ -113,12 +113,9 @@ aside a {
   }
 
   aside nav a {
+    flex-direction: column;
     margin-bottom: 0;
     font-size: 1.25rem;
-  }
-
-  aside nav a i {
-    display: none;
   }
 }
 
@@ -151,6 +148,7 @@ aside a {
   }
 
   aside nav a {
+    flex-direction: row;
     font-size: 2rem;
   }
 
