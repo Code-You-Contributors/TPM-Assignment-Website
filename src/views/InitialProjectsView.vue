@@ -1,9 +1,16 @@
 <template>
-  <div class="initial-projects">
+  <header>
     <h1>Initial Project Assignment</h1>
-    <iframe
-      src="https://docs.google.com/document/d/1FZzouPN-F6zeP7oqAreAN-cX_XhfbsKfNdi3ZkiR0-Q/preview"
-    ></iframe>
+  </header>
+
+  <div class="container">
+    <div class="table-container">
+      <div class="doc-container">
+        <iframe
+          src="https://docs.google.com/document/d/1FZzouPN-F6zeP7oqAreAN-cX_XhfbsKfNdi3ZkiR0-Q/preview"
+        ></iframe>
+      </div>
+    </div>
   </div>
 </template>
 

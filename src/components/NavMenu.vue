@@ -2,18 +2,18 @@
   <aside :class="isOpen ? 'active' : ''">
     <img src="@/assets/imgs/cy-logo-dstacked-color.png" alt="Code:You logo" class="logo-stacked" id="logo-stacked">
     <img src="@/assets/imgs/cy-logo-horz-color.png" alt="Code:You logo" class="logo-horizontal" id="logo-horizontal">
+
     <nav>
       <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-house"></i>Home</router-link>
       <router-link to="/initial-projects" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Initial Projects</router-link>
       <router-link to="/assignments" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Assignments</router-link>
       <router-link to="/working-with-us" v-on:click="closeMenu"><i class="fa-solid fa-people-group"></i>Working With Us</router-link>
     </nav>
-  </aside>
-  <div class="content">
-    <div class="hamburger" v-on:click="toggleMenu">
+
+    <button class="hamburger" v-on:click="toggleMenu">
       <i v-bind:class="['fa-solid', isOpen ? 'fa-x' : 'fa-bars']"></i>
-    </div>
-  </div>
+    </button>
+  </aside>
 </template>
 
 <script setup>
@@ -53,7 +53,6 @@ aside {
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  height: 100vh;
 }
 
 aside a {
@@ -84,6 +83,7 @@ aside a {
   z-index: 10;
   border-radius: 50%;
   cursor: pointer;
+  border: none;
 }
 
 @media (max-width: 960px) {

@@ -5,9 +5,9 @@ import NavMenu from './components/NavMenu.vue';
 <template>
   <div class="layout">
     <NavMenu />
-    <div class="content">
+    <main>
       <router-view />
-    </div>
+    </main>
   </div>
 </template>
 
@@ -15,16 +15,7 @@ import NavMenu from './components/NavMenu.vue';
 .layout {
   display: flex;
   flex-direction: row;
-}
-
-content {
-  flex: 1;
-  padding: 40px 30px;
-  background-color: var(--bg-1);
-  color: var(--black-cherry);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 100vh;
 }
 
 @media (max-width: 960px) {
