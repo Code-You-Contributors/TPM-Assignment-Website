@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <header>
     <h1>Assignments</h1>
-    <ReusableTable :headers="headers" :items="items" />
+  </header>
+
+  <div class="container">
+    <div class="table-container">
+      <ReusableTable :headers="headers" :items="items" />
+    </div>
   </div>
 </template>
 

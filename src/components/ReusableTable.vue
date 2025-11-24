@@ -35,6 +35,7 @@ export default {
 
 <style scoped>
 .reusable-table {
+  width: 100%;
   border-collapse: collapse;
   border: 1px solid darkgray;
 }

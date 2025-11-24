@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  /* Primary Colors */
+  --black-cherry: #881f48;
+  --black-berry: #022f47;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Background Clours (BG) */
+  --bg-1: #31465a;
+  --bg-2: #586275;
+  --bg-3: #828796;
+  --bg-4: #b2b5be;
+  --bg-5: #f3f3f4;
+
+  /* Bright Colors (B) */
+  --b-purple: #44174c;
+  --b-blue: #106396;
+  --b-torquise: #26a4b4;
+  --b-green: #25b67b;
+  --b-yellow: #ecb41f;
+  --b-orange: #e06b26;
+  --b-magenta: #e4185b;
+  --b-violet: #9f2064;
+
+  /* Dark Colors (D) */
+  --d-purple: #301339;
+  --d-blue: #11476c;
+  --d-torquise: #1c6c79;
+  --d-green: #0f7657;
+  --d-yellow: #866c2c;
+  --d-orange: #874728;
+  --d-magenta: #881f48;
+  --d-violet: #651d4e;
+
+  /* Fonts */
+  --font-body: "Roboto", sans-serif;
+  --font-alt-headline: "Share Tech Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-1);
+  color: var(--black-cherry);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 80vw;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  background-color: var(--bg-1);
+}
+
+.table-container {
+  background: var(--white);
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 0 30px 40px 30px;
+  background-color: var(--bg-1);
+  color: var(--black-cherry);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-alt-headline);
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: var(--bg-5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-family: var(--font-alt-headline);
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 0;
+  color: var(--b-blue);
+}
+
+@media (max-width: 960px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90vw;
+  }
+
+  .table-container {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+
+  .table-container {
+    padding: 20px 5px;
+  }
+}

@@ -1,11 +1,26 @@
-<script setup></script>
+<script setup>
+import NavMenu from './components/NavMenu.vue';
+</script>
 
 <template>
-  <nav>
-    <router-link to="/assignments">Assignments</router-link> | 
-    <router-link to="/working-with-us">Working With Us</router-link>
-  </nav>
-  <router-view />
+  <div class="layout">
+    <NavMenu />
+    <main>
+      <router-view />
+    </main>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+</style>
