@@ -21,11 +21,11 @@ export default {
 </script>
 
 <style>
-.initial-projects {
+.doc-container {
   height: 100vh;
 }
 
-.initial-projects iframe {
+.doc-container iframe {
   width: 100%;
   height: 100%;
   border: none;

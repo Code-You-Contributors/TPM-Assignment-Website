@@ -109,6 +109,11 @@ section h2 {
   color: var(--b-blue);
 }
 
+section h4 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
 @media (max-width: 960px) {
   body {
     display: flex;
