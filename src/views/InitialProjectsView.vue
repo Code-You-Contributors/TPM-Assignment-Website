@@ -10,7 +10,7 @@
       <ul>
         <li>Running and deploying existing code.</li>
         <li>Using branches and version control properly.</li>
-        <li>Collaborating in a team environment without breaking the main branch.</li>
+        <li>Collaborating in a team environment without breaking the <code>main</code> branch.</li>
       </ul>
       <p>Please fork each repository and clone your copy locally before starting.</p>
       <p>Note the projects don’t have full instructions on how to do different parts. This is to get used to having to look new things up. We are always here to help if you get stuck and can’t get something to work.</p>
@@ -50,7 +50,7 @@
       <p>Branching Guidelines: <a href="https://docs.google.com/document/d/1sxmOdZr19dFgSs4NCmIMr-q76K5f_H2aBh16EIBzsMk/edit?usp=sharing">documentation</a></p>
       <ul>
         <li>Create a new branch for each section you edit (e.g., <code>about-me</code>, <code>projects</code>, <code>contact</code>).</li>
-        <li>After completing a section, switch to main, then make a new branch for the next section.</li>
+        <li>After completing a section, switch to <code>main</code>, then make a new branch for the next section.</li>
         <li>Avoid working directly on <code>main</code></li>
           <ul>
             <li>In real-world workflows, we always work in branches to prevent conflicts and code breakage.</li>

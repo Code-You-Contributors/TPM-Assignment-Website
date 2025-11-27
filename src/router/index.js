@@ -7,7 +7,7 @@ import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'handbook',
     component: HandbookView
   },
 
