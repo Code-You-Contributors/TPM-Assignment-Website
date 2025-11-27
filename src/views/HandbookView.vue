@@ -250,7 +250,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .skill-grid {
   column-count: 3;
   column-gap: 30px;
