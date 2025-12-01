@@ -1,13 +1,19 @@
 <script setup>
 import NavMenu from './components/NavMenu.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <div class="layout">
     <NavMenu />
-    <main>
-      <router-view />
-    </main>
+    
+    <div>
+      <main>
+        <router-view />
+      </main>
+
+      <Footer />
+    </div>
   </div>
 </template>
 
