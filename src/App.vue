@@ -6,8 +6,8 @@ import Footer from './components/Footer.vue';
 <template>
   <div class="layout">
     <NavMenu />
-    
-    <div>
+
+    <div class="content-wrapper">
       <main>
         <router-view />
       </main>
@@ -22,6 +22,13 @@ import Footer from './components/Footer.vue';
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 @media (max-width: 960px) {
