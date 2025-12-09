@@ -3,7 +3,7 @@
     <h1>Working With Us</h1>
   </header>
 
-  <div class="content">
+  <div class="container">
     <section>
       <h2>Collaboration</h2>
       <p>Be is a tristitia fames se multitudo diam metus facilis commodo rhoncus sub gravitas leo pharetra, tu of tempus. Lobortis to qui tristis vicissitudo sic ipsum felis consuetudo dolor vel per. Justo in ex the.</p>

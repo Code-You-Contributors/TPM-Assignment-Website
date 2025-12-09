@@ -3,7 +3,7 @@
     <h1>Initial Project Assignment</h1>
   </header>
 
-  <div class="content">
+  <div class="container">
     <section>
       <h2>Project Assignment Overview</h2>
       <p>You will be working on two starter projects. The purpose is to get comfortable with:</p>

@@ -7,7 +7,7 @@ import Footer from './components/Footer.vue';
   <div class="layout">
     <NavMenu />
 
-    <div class="content-wrapper">
+    <div class="content">
       <main>
         <router-view />
       </main>
@@ -25,7 +25,7 @@ import Footer from './components/Footer.vue';
   width: 100vw;
 }
 
-.content-wrapper {
+.content {
   display: flex;
   flex-direction: column;
   flex: 1;

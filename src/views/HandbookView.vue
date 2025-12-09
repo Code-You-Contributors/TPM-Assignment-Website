@@ -3,7 +3,7 @@
     <h1>Participant Handbook</h1>
   </header>
 
-  <div class="content">
+  <div class="container">
     <section>
       <h2>Technical Project Management (TPM) Participant Handbook</h2>
       <p>This document outlines how Technical Project Managers work with program graduates to help them grow beyond Code:You, through real-world projects, team habits, and professional practices that prepare them for the next step in their career.</p>
