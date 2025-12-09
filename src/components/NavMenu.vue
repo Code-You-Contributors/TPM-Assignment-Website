@@ -108,7 +108,7 @@ aside a {
   aside nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     flex-basis: 75%;
   }
 
@@ -116,6 +116,7 @@ aside a {
     flex-direction: column;
     margin-bottom: 0;
     font-size: 1.25rem;
+    text-align: center;
   }
 }
 
