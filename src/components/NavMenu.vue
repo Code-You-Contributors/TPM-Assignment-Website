@@ -7,6 +7,7 @@
       <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Handbook</router-link>
       <router-link to="/initial-projects" v-on:click="closeMenu"><i class="fa-solid fa-file-code"></i>Initial Projects</router-link>
       <router-link to="/assignments" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Assignments</router-link>
+      <router-link to="/continued-learning" v-on:click="closeMenu"><i class="fa-solid fa-graduation-cap"></i>Continued Learning</router-link>
       <router-link to="/working-with-us" v-on:click="closeMenu"><i class="fa-solid fa-people-group"></i>Working With Us</router-link>
     </nav>
 

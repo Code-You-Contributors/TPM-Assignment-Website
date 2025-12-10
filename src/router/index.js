@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HandbookView from '@/views/HandbookView.vue'
 import InitialProjectsView from '@/views/InitialProjectsView.vue'
+import ContinuedLearning from '@/views/ContinuedLearning.vue'
 import AssignmentView from '@/views/AssignmentView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
 
@@ -21,6 +22,12 @@ const routes = [
     path: '/assignments',
     name: 'assignments',
     component: AssignmentView
+  },
+
+  {
+    path: '/continued-learning',
+    name: 'continued-learning',
+    component: ContinuedLearning
   },
 
   {
