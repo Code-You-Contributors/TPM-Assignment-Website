@@ -147,6 +147,7 @@ aside a {
 
   aside nav {
     flex-direction: column;
+    align-items: center;
   }
 
   aside nav a {

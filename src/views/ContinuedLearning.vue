@@ -3,7 +3,7 @@
     <h1>Continued Learning</h1>
   </header>
 
-  <div class="content">
+  <div class="container">
     <section>
       <h2>Data Analysis</h2>
     </section>
