@@ -4,6 +4,7 @@ import InitialProjectsView from '@/views/InitialProjectsView.vue'
 import ContinuedLearning from '@/views/ContinuedLearning.vue'
 import AssignmentView from '@/views/AssignmentView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
+import AddProject from '@/views/AddProject.vue'
 
 const routes = [
   {
@@ -34,7 +35,13 @@ const routes = [
     path: '/working-with-us',
     name: 'working-with-us',
     component: WorkingWithUsView
-  }
+  },
+
+  {
+    path: '/add-project',
+    name: 'add-project',
+    component: AddProject
+  },
 ]
 
 const router = createRouter({
