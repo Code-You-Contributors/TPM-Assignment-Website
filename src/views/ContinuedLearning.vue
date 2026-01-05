@@ -65,5 +65,10 @@ const softwareProjects = computed(() => projects.filter(p => p.pathway === 'soft
 <style scoped>
   .project {
     border-bottom: 1px solid var(--black-berry);
+    padding-top: 1rem;
+  }
+
+  .project:last-child {
+    border-bottom: none;
   }
 </style>
