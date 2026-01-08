@@ -1,5 +1,29 @@
 # tpm_assignment
 
+### Add Project
+
+- Route: `src/views/AddProject.vue` (not linked in the app)
+- Purpose: Generate new project objects for `src/data/projects.js` without a backend
+
+Usage:
+
+1. Navigate to `/add-project`.
+2. Fill out the form (Pathway, Repository Link, Description).
+3. Click `Save`.
+4. Copy the generated JavaScript object from the browser console and paste it into `src/data/projects.js`.
+
+Example console output:
+
+```js
+{
+ id: 1767897128742,
+ pathway: 'webDev',
+ repoLink: 'https://github.com/Code-You-Contributors/TPM-Assignment-Website',
+ description: 'Example project'
+},
+```
+---
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
@@ -9,7 +33,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Recommended Browser Setup
 
 - Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
   - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
 - Firefox:
   - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
