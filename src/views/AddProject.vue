@@ -31,7 +31,21 @@ const form = reactive({
 })
 
 function handleSubmit() {
-  console.log('New project:', {...form})
+  const project = {
+    id: Date.now(),
+    pathway: form.pathway,
+    repoLink: form.repoLink,
+    description: form.description
+  }
+
+  console.log(`
+  {
+    id: ${project.id},
+    pathway: '${project.pathway}',
+    repoLink: '${project.repoLink}',
+    description: '${project.description}'
+  },
+  `)
 
   Object.assign(form, {
     pathway: '',
