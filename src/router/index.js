@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HandbookView from '@/views/HandbookView.vue'
 import InitialProjectsView from '@/views/InitialProjectsView.vue'
 import ContinuedLearning from '@/views/ContinuedLearning.vue'
-import AssignmentView from '@/views/AssignmentView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
 import AddProject from '@/views/AddProject.vue'
 
@@ -20,9 +20,9 @@ const routes = [
   },
 
   {
-    path: '/assignments',
-    name: 'assignments',
-    component: AssignmentView
+    path: '/projects',
+    name: 'projects',
+    component: ProjectsView
   },
 
   {

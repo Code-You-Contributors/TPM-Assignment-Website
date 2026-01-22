@@ -10,7 +10,17 @@
     <tbody>
       <tr v-for="(item, rowIndex) in items" :key="rowIndex">
         <td v-for="(header, colIndex) in headers" :key="colIndex">
-          {{ item[header] }}
+          <a
+            v-if="isUrl(item[header])"
+            :href="item[header]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ shortenUrl(item[header]) }}
+          </a>
+          <span v-else>
+            {{ item[header] }}
+          </span>
         </td>
       </tr>
     </tbody>
@@ -28,6 +38,18 @@ export default {
     items: {
       type: Array,
       required: true,
+    },
+  },
+  methods: {
+    isUrl(value) {
+      return typeof value === 'string' && value.startsWith('http');
+    },
+    shortenUrl(url) {
+      try {
+        return url.replace(/^https?:\/\//, '');
+      } catch {
+        return url;
+      }
     },
   },
 };
