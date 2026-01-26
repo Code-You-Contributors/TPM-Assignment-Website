@@ -104,6 +104,7 @@ aside a {
     width: 100vw;
     padding: 40px 20px;
     flex-direction: row;
+    gap: 20px;
   }
 
   aside nav {
