@@ -61,7 +61,7 @@ aside a {
   align-items: center;
   font-family: var(--font-alt-headline);
   text-decoration: none;
-  color: var(--blue);
+  color: var(--black-cherry);
   gap: 10px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -94,31 +94,32 @@ aside a {
 
   .logo-horizontal {
     display: block;
-    flex: 1;
     max-width: 100%;
     max-height: 40px;
+    padding: 0 10px;
   }
 
   aside {
-    height: 50px;
+    height: 100px;
     width: 100vw;
-    padding: 40px 20px;
     flex-direction: row;
     gap: 20px;
   }
 
   aside nav {
+    min-width: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
-    flex-basis: 75%;
   }
 
   aside nav a {
+    min-width: 0;
     flex-direction: column;
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
+    padding: 10px;
   }
 }
 
