@@ -36,4 +36,10 @@ import Footer from './components/Footer.vue';
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 20px;
+  }
+}
 </style>

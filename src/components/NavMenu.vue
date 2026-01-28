@@ -150,6 +150,7 @@ aside a {
   aside nav {
     flex-direction: column;
     align-items: center;
+    flex: 1;
   }
 
   aside nav a {
