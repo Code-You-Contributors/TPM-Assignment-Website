@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HandbookView from '@/views/HandbookView.vue'
 import InitialProjectsView from '@/views/InitialProjectsView.vue'
-import ContinuedLearning from '@/views/ContinuedLearning.vue'
+import ContinuedLearningView from '@/views/ContinuedLearningView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import WorkingWithUsView from '@/views/WorkingWithUsView.vue'
-import AddProject from '@/views/AddProject.vue'
+import AddProjectView from '@/views/AddProjectView.vue'
 
 const routes = [
   {
@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/continued-learning',
     name: 'continued-learning',
-    component: ContinuedLearning
+    component: ContinuedLearningView
   },
 
   {
@@ -40,7 +40,7 @@ const routes = [
   {
     path: '/add-project',
     name: 'add-project',
-    component: AddProject
+    component: AddProjectView
   },
 ]
 

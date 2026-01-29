@@ -4,7 +4,7 @@
     <img src="@/assets/imgs/cy-logo-horz-color.png" alt="Code:You logo" class="logo-horizontal" id="logo-horizontal">
 
     <nav>
-      <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Handbook</router-link>
+      <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Participant Handbook</router-link>
       <router-link to="/initial-projects" v-on:click="closeMenu"><i class="fa-solid fa-file-code"></i>Initial Projects</router-link>
       <router-link to="/projects" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Projects</router-link>
       <router-link to="/continued-learning" v-on:click="closeMenu"><i class="fa-solid fa-graduation-cap"></i>Continued Learning</router-link>
