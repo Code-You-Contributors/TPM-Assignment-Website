@@ -48,12 +48,17 @@
         <p>{{ project.description }}</p>
       </div>
     </section>
+
+    <section>
+      <KeepBuildingSkills />
+    </section>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue';
 import { projects } from '@/data/projects';
+import KeepBuildingSkills from '@/components/KeepBuildingSkills.vue';
 
 const dataProjects = computed(() => projects.filter(p => p.pathway === 'data'))
 

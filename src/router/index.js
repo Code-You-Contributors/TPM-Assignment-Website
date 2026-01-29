@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HandbookView from '@/views/HandbookView.vue'
+import ParticipantHandbookView from '@/views/ParticipantHandbookView.vue'
 import InitialProjectsView from '@/views/InitialProjectsView.vue'
 import ContinuedLearningView from '@/views/ContinuedLearningView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
@@ -9,8 +9,8 @@ import AddProjectView from '@/views/AddProjectView.vue'
 const routes = [
   {
     path: '/',
-    name: 'handbook',
-    component: HandbookView
+    name: 'participant-handbook',
+    component: ParticipantHandbookView
   },
 
   {
