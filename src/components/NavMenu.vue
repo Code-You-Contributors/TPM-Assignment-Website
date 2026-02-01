@@ -155,7 +155,8 @@ aside a {
 
   aside nav a {
     flex-direction: row;
-    font-size: 2rem;
+    font-size: clamp(1rem, 7vw, 2rem);
+    white-space: nowrap;
   }
 
   .hamburger {
