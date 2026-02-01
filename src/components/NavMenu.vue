@@ -48,7 +48,7 @@ aside {
   color: var(--black-cherry);
   font-family: var(--font-alt-headline);
   padding: 40px 20px;
-  width: 250px;
+  width: 280px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
