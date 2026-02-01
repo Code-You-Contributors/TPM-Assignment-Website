@@ -82,10 +82,11 @@ header {
   text-align: center;
   color: var(--white);
   margin-bottom: 30px;
+  padding: 0 40px;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: var(--font-alt-headline);
