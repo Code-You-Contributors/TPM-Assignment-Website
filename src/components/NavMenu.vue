@@ -44,16 +44,19 @@ function closeMenu() {
 }
 
 aside {
+  position: fixed;
+  height: 100vh;
   background-color: var(--bg-5);
   color: var(--black-cherry);
   font-family: var(--font-alt-headline);
   padding: 40px 20px;
-  width: 280px;
+  width: var(--sidebar-width);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 aside a {
@@ -120,6 +123,7 @@ aside a {
     font-size: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
     padding: 10px;
+    flex: 1;
   }
 }
 
@@ -134,12 +138,12 @@ aside a {
   }
 
   aside {
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     z-index: 2;
-    height: 100vh;
+    height: 100%;
     position: fixed;
-    top: -100vh;
+    top: -100%;
     transition: all 0.2s;
   }
 
