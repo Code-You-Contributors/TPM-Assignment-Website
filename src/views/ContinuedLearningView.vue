@@ -12,9 +12,9 @@
         :key="project.id"
         class="project"
       >
-        <a :href="project.repoLink" target="_blank" rel="noopener">
+        <ExternalLink :href="project.repoLink">
           {{ project.repoLink.replace('https://', '') }}
-        </a>
+        </ExternalLink>
         <p>{{ project.description }}</p>
       </div>
     </section>
@@ -27,9 +27,9 @@
         :key="project.id"
         class="project"
       >
-        <a :href="project.repoLink" target="_blank" rel="noopener">
+        <ExternalLink :href="project.repoLink">
           {{ project.repoLink.replace('https://', '') }}
-        </a>
+        </ExternalLink>
         <p>{{ project.description }}</p>
       </div>
     </section>
@@ -42,9 +42,9 @@
         :key="project.id"
         class="project"
       >
-        <a :href="project.repoLink" target="_blank" rel="noopener">
+        <ExternalLink :href="project.repoLink">
           {{ project.repoLink.replace('https://', '') }}
-        </a>
+        </ExternalLink>
         <p>{{ project.description }}</p>
       </div>
     </section>
@@ -59,6 +59,7 @@
 import { computed } from 'vue';
 import { projects } from '@/data/projects';
 import KeepBuildingSkills from '@/components/KeepBuildingSkills.vue';
+import ExternalLink from '@/components/ExternalLink.vue';
 
 const dataProjects = computed(() => projects.filter(p => p.pathway === 'data'))
 

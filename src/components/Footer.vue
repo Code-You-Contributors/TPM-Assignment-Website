@@ -5,14 +5,14 @@
     <div class="section">
       <div class="person">
         David York:
-        <a href="https://www.linkedin.com/in/david-m-york/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:david@codeyou.org">Email</a>
+        <ExternalLink href="https://www.linkedin.com/in/david-m-york/">LinkedIn</ExternalLink>
+        <ExternalLink href="mailto:david@codeyou.org">Email</ExternalLink>
       </div>
 
       <div class="person">
         Danny Morton:
-        <a href="https://www.linkedin.com/in/dmorton714/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:danny@codeyou.org">Email</a>
+        <ExternalLink href="https://www.linkedin.com/in/dmorton714/">LinkedIn</ExternalLink>
+        <ExternalLink href="mailto:danny@codeyou.org">Email</ExternalLink>
       </div>
     </div>
 
@@ -21,8 +21,8 @@
     <div class="section">
       <div class="person">
         Huan Song:
-        <a href="https://www.linkedin.com/in/huansong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:huansong1214@gmail.com">Email</a>
+        <ExternalLink href="https://www.linkedin.com/in/huansong/">LinkedIn</ExternalLink>
+        <ExternalLink href="mailto:huansong1214@gmail.com">Email</ExternalLink>
       </div>
     </div>
 
@@ -31,6 +31,8 @@
 </template>
 
 <script setup>
+import ExternalLink from './ExternalLink.vue';
+
 const year = new Date().getFullYear();
 </script>
 

@@ -8,7 +8,7 @@
       <h2>Technical Project Management (TPM) Participant Handbook</h2>
       <p>This document outlines how Technical Project Managers work with program graduates to help them grow beyond Code:You, through real-world projects, team habits, and professional practices that prepare them for the next step in their career.</p>
       <p>Our goal: build meaningful, portfolio-worthy work <strong>and</strong> help you develop the habits that make you successful in any team environment.</p>
-      <p>If you have any questions about anything you read in this guide, please reach out to one of the Technical Project Managers, Danny Morton or David York, via email (<a href="mailto:danny@codeyou.org">danny@codeyou.org</a> or <a href="mailto:david@codeyou.org">david@codeyou.org</a>) or Slack.</p>
+      <p>If you have any questions about anything you read in this guide, please reach out to one of the Technical Project Managers, Danny Morton or David York, via email (<ExternalLink href="mailto:danny@codeyou.org">danny@codeyou.org</ExternalLink> or <ExternalLink href="mailto:david@codeyou.org">david@codeyou.org</ExternalLink>) or Slack.</p>
     </section>
 
     <section>
@@ -143,11 +143,13 @@
 </template>
 
 <script>
+import ExternalLink from '@/components/ExternalLink.vue';
 import KeepBuildingSkills from '@/components/KeepBuildingSkills.vue';
 
 export default {
   name: 'ParticipantHandbookView',
   components: {
+    ExternalLink,
     KeepBuildingSkills
   }
 };

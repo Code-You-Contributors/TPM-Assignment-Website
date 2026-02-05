@@ -18,7 +18,7 @@
 
     <section>
       <h3>Project 1: Running and Deploying an Existing App</h3>
-      <p>Repo: <a href="https://github.com/dmorton714/CY_project">Dashboard Deployment</a></p>
+      <p>Repo: <ExternalLink href="https://github.com/dmorton714/CY_project">Dashboard Deployment</ExternalLink></p>
       <p>Goals:</p>
       <ul>
         <li>Get the project running locally.</li>
@@ -40,14 +40,14 @@
 
     <section>
       <h3>Project 2: Personal Portfolio Website</h3>
-      <p>Repo: <a href="https://github.com/CodeYouOrg/CY-portfolio-template/tree/master">Portfolio Template</a></p>
+      <p>Repo: <ExternalLink href="https://github.com/CodeYouOrg/CY-portfolio-template/tree/master">Portfolio Template</ExternalLink></p>
       <p>Goals:</p>
       <ul>
         <li>Customize the template with your information.</li>
         <li>Optionally swap out pictures.</li>
         <li>Learn and practice proper Git workflows.</li>
       </ul>
-      <p>Branching Guidelines: <a href="https://docs.google.com/document/d/1sxmOdZr19dFgSs4NCmIMr-q76K5f_H2aBh16EIBzsMk/edit?usp=sharing">documentation</a></p>
+      <p>Branching Guidelines: <ExternalLink href="https://docs.google.com/document/d/1sxmOdZr19dFgSs4NCmIMr-q76K5f_H2aBh16EIBzsMk/edit?usp=sharing">documentation</ExternalLink></p>
       <ul>
         <li>Create a new branch for each section you edit (e.g., <code>about-me</code>, <code>projects</code>, <code>contact</code>).</li>
         <li>After completing a section, switch to <code>main</code>, then make a new branch for the next section.</li>
@@ -71,8 +71,13 @@
 </template>
 
 <script>
+import ExternalLink from '@/components/ExternalLink.vue';
+
 export default {
   name: 'InitialProjects',
+  components: {
+    ExternalLink
+  }
 };
 </script>
 

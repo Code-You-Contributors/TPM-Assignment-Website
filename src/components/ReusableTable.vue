@@ -10,14 +10,12 @@
     <tbody>
       <tr v-for="(item, rowIndex) in items" :key="rowIndex">
         <td v-for="(header, colIndex) in headers" :key="colIndex">
-          <a
+          <ExternalLink
             v-if="isUrl(item[header])"
             :href="item[header]"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             {{ shortenUrl(item[header]) }}
-          </a>
+          </ExternalLink>
           <span v-else>
             {{ item[header] }}
           </span>
@@ -28,8 +26,13 @@
 </template>
 
 <script>
+import ExternalLink from './ExternalLink.vue';
+
 export default {
   name: 'ReusableTable',
+  components: {
+    ExternalLink
+  },
   props: {
     headers: {
       type: Array,
