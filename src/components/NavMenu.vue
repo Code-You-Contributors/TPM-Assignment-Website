@@ -4,9 +4,9 @@
     <img src="@/assets/imgs/cy-logo-horz-color.png" alt="Code:You logo" class="logo-horizontal" id="logo-horizontal">
 
     <nav>
-      <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Handbook</router-link>
+      <router-link to="/" v-on:click="closeMenu"><i class="fa-solid fa-file"></i>Participant Handbook</router-link>
       <router-link to="/initial-projects" v-on:click="closeMenu"><i class="fa-solid fa-file-code"></i>Initial Projects</router-link>
-      <router-link to="/assignments" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Assignments</router-link>
+      <router-link to="/projects" v-on:click="closeMenu"><i class="fa-solid fa-calendar-check"></i>Projects</router-link>
       <router-link to="/continued-learning" v-on:click="closeMenu"><i class="fa-solid fa-graduation-cap"></i>Continued Learning</router-link>
       <router-link to="/working-with-us" v-on:click="closeMenu"><i class="fa-solid fa-people-group"></i>Working With Us</router-link>
     </nav>
@@ -44,16 +44,19 @@ function closeMenu() {
 }
 
 aside {
+  position: fixed;
+  height: 100vh;
   background-color: var(--bg-5);
   color: var(--black-cherry);
   font-family: var(--font-alt-headline);
   padding: 40px 20px;
-  width: 250px;
+  width: var(--sidebar-width);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 aside a {
@@ -61,7 +64,7 @@ aside a {
   align-items: center;
   font-family: var(--font-alt-headline);
   text-decoration: none;
-  color: var(--blue);
+  color: var(--black-cherry);
   gap: 10px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -94,30 +97,33 @@ aside a {
 
   .logo-horizontal {
     display: block;
-    flex: 1;
     max-width: 100%;
     max-height: 40px;
+    padding: 0 10px;
   }
 
   aside {
-    height: 50px;
+    height: 100px;
     width: 100vw;
-    padding: 40px 20px;
     flex-direction: row;
+    gap: 20px;
   }
 
   aside nav {
+    min-width: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
-    flex-basis: 75%;
   }
 
   aside nav a {
+    min-width: 0;
     flex-direction: column;
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
+    padding: 10px;
+    flex: 1;
   }
 }
 
@@ -132,12 +138,12 @@ aside a {
   }
 
   aside {
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     z-index: 2;
-    height: 100vh;
+    height: 100%;
     position: fixed;
-    top: -100vh;
+    top: -100%;
     transition: all 0.2s;
   }
 
@@ -148,11 +154,13 @@ aside a {
   aside nav {
     flex-direction: column;
     align-items: center;
+    flex: 1;
   }
 
   aside nav a {
     flex-direction: row;
-    font-size: 2rem;
+    font-size: clamp(1rem, 7vw, 2rem);
+    white-space: nowrap;
   }
 
   .hamburger {

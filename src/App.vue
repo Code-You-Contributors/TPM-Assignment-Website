@@ -29,11 +29,21 @@ import Footer from './components/Footer.vue';
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin-left: var(--sidebar-width);
 }
 
 @media (max-width: 960px) {
-  .layout {
-    flex-direction: column;
+  .content {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 20px;
+    margin-top: 0;
+    width: 100%;
   }
 }
 </style>
