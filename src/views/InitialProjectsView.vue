@@ -80,9 +80,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-code {
-  color: #188038;
-}
-</style>

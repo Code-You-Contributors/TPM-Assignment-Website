@@ -5,21 +5,24 @@
 - Route: `src/views/AddProject.vue` (not linked in the app)
 - Purpose: Generate new project objects for `src/data/projects.js` without a backend
 
-Usage:
+This is a small internal utility view to help maintain the project list.
+
+#### Usage
 
 1. Navigate to `/add-project`.
 2. Fill out the form (Pathway, Repository Link, Description).
-3. Click `Save`.
-4. Copy the generated JavaScript object from the browser console and paste it into `src/data/projects.js`.
+3. Click **Generate Project Object**.
+4. The generated JavaScript object is displayed on screen and logged to the browser console.
+5. Click **Copy to Clipboard** and paste the object into `src/data/projects.js`.
 
 Example console output:
 
 ```js
 {
- id: 1767897128742,
- pathway: 'webDev',
- repoLink: 'https://github.com/Code-You-Contributors/TPM-Assignment-Website',
- description: 'Example project'
+  id: 1767897128742,
+  pathway: 'webDev',
+  repoLink: 'https://github.com/Code-You-Contributors/TPM-Assignment-Website',
+  description: 'Example project'
 },
 ```
 ---

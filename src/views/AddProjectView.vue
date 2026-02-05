@@ -5,7 +5,7 @@
 
   <div class="container">
     <form @submit.prevent="handleSubmit">
-      <select v-model="form.pathway">
+      <select v-model="form.pathway" required>
         <option value="" disabled hidden>Select a pathway</option>
         <option value="data">Data Analysis</option>
         <option value="webDev">Web Development</option>
@@ -16,18 +16,42 @@
 
       <textarea v-model="form.description" placeholder="Description" required></textarea>
 
-      <button type="submit">Save</button>
+      <button type="submit" class="btn">Generate Project Object</button>
     </form>
+  </div>
+
+  <!-- Display the last generated project. -->
+  <div class="container flex-center">
+    <section class="output">
+      <h2>Generated Project Object</h2>
+      <pre><code>{{ lastProject ? formattedProject : '// Output' }}</code></pre>
+    </section>
+
+    <button type="button" class="btn" @click="copyToClipboard">Copy to Clipboard</button>
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
+import { reactive, ref, computed } from 'vue';
 
 const form = reactive({
   pathway: '',
   repoLink: '',
   description: '',
+})
+
+// Store the most recently submitted project.
+const lastProject = ref(null)
+
+const formattedProject = computed(() => {
+  if (!lastProject.value) return ''
+  const p = lastProject.value
+  return `{
+  id: ${p.id},
+  pathway: '${p.pathway}',
+  repoLink: '${p.repoLink}',
+  description: '${p.description}'
+},`
 })
 
 function handleSubmit() {
@@ -37,6 +61,9 @@ function handleSubmit() {
     repoLink: form.repoLink,
     description: form.description
   }
+
+  // Store the project for display.
+  lastProject.value = project
 
   console.log(`
   {
@@ -53,13 +80,17 @@ function handleSubmit() {
     description: ''
   })
 }
+
+function copyToClipboard() {
+  if(!lastProject.value) return
+  navigator.clipboard.writeText(formattedProject.value)
+    .catch(err => {
+      console.error('Failed to copy:', err)
+    })
+}
 </script>
 
 <style scoped>
-  .container {
-    max-width: 800px;
-  }
-
   form {
     display: flex;
     flex-direction: column;
@@ -80,18 +111,17 @@ function handleSubmit() {
     min-height: 100px;
   }
 
-  button {
-    align-self: center;
-    padding: 0.75rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-    color: var(--white);
-    border-radius: 7px;
-    border: 1px solid;
-    background-color: var(--black-cherry);
+  .flex-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  button:hover {
-    background-color: var(--black-berry);
+  pre {
+    overflow-x: auto;
+  }
+
+  .output {
+    margin: 30px 0 0 0;
   }
 </style>
